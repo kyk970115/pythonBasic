@@ -7,5 +7,6 @@ sum = 0
 
 for a in range(a,(n+1)):
     sum = sum + a
+    
 
 print(f"{sum}")
