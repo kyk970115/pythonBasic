@@ -28,7 +28,8 @@ print(f"number is {random.sample(lotto,6)}")
 li = [1,2,3,4,5]
 random.shuffle(li)
 print(f"random.shuffle(li) : {li}")
-# print(f"random.shuffle(li) : {random.shuffle(li)}") == None : 
+# print(f"random.shuffle(li) : {random.shuffle(li)}") == None
+# : (결과를 반환하는 함수가 아닌) 리스트를 셔플하기만 하는 함수
 # shuffle(A) : 시퀀스 자료형 A의 요소들의 순서 섞음
 
 # 3. time : 시간 처리 관련 모듈
