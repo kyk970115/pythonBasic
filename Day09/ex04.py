@@ -33,4 +33,29 @@ print(f"random.shuffle(li) : {li}")
 # shuffle(A) : 시퀀스 자료형 A의 요소들의 순서 섞음
 
 # 3. time : 시간 처리 관련 모듈
+
+import time
+
+print(f"time() : {time.time}")
+t = time.time()
+print(f"ctime() : {time.ctime(t)}")
+s = time.strftime("%Y/%m/%d (%a) %H:%M:%S")
+print(f"strftime() : {s}")
+time.sleep(5) # 지정한 시간만큼 시스템을 일시 중지
+
 # 4. datetime : 날짜/시간 데이터 처리 모듈
+
+import datetime
+
+nowtime = datetime.datetime.now() # [모듈].[객체].now()
+print(f"현재 날짜와 시간 : {nowtime}")
+today = datetime.date(2022,1,27)
+print(f"현재 날짜와 시간 : {today}")
+today = datetime.datetime.now()
+print(f"{today.year}년 {today.month}월 {today.day}일 {today.hour}시 {today.minute}분 {today.second}초")
+specialDay = datetime.date(2022,2,7)
+print(f"종강일 : {specialDay}")
+t1 = datetime.time(15,0,0)
+print(f"현재 시간 : {t1}")
+t2 = datetime.time(15,50,0)
+print(f"수업 종료 : {t2}")
